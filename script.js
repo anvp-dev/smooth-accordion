@@ -1,4 +1,4 @@
-const accordion = () => {
+
   const accordions = document.querySelectorAll('.accordion');
 
   accordions.forEach(item => {
@@ -46,4 +46,3 @@ const accordion = () => {
       }
     });
   });
-};
