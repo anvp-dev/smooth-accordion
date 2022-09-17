@@ -1,7 +1,47 @@
-.accordion {
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+@media screen and (min-width: 960px) {
+    html {
+      margin-left: calc(100vw - 100%);
+      margin-right: 0;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+/* Стили аккордиона */
+.accordion, .acc2 {
     max-width: 400px;
     width: 100%;
     margin-right: 20px;
+    margin-bottom: 150px;
 }
 
 .accordion__item {
@@ -51,11 +91,11 @@
         transition: all 0.25s ease-in-out;
     }
 
-    .accordion__item.is-active .accordion__button::before {
+    .accordion__item_active .accordion__button::before {
         transform: translateX(-4px) rotate(45deg);
     }
 
-    .accordion__item.is-active .accordion__button::after {
+    .accordion__item_active .accordion__button::after {
         transform: translateX(1px) rotate(-45deg);
     }
 
@@ -80,10 +120,10 @@
     margin-bottom: 15px;
 }
 
-.accordion__body.is-active {
+.accordion__body_active {
     height: 0;
 }
 
-.accordion__body.is-active .accordion__content {
+.accordion__body_active .accordion__content {
     transform: translateY(0px);
 }

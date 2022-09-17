@@ -1,2 +1,2 @@
-# accordion_2
-https://anvp-dev.github.io/accordion_2/
+# Smooth Accordion
+Accordion written in pure JavaScript.
